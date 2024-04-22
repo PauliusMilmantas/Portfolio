@@ -2,6 +2,7 @@
 <head>
     <title>Paulius Milmantas</title>
     <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
     <div class="title">
@@ -11,6 +12,52 @@
         <br /><br />
         <a href="http://github.com/pauliusmilmantas"><img src="svg/github-rounded-border-svgrepo-com.svg" width="80px;"/></a>
         <a href="https://www.linkedin.com/in/paulius-milmantas-53009a116/"><img src="svg/linkedin-svgrepo-com.svg" width="80px;"/></a>
+    </div>
+
+    <div class="content">
+        I'm a full-stack developer. Experienced with:<br />
+
+        <div class="description">
+            Backend:<br />
+            •.NET<br />
+            •NestJS, NodeJS - TypeScript, JavaScript, <br />
+            •Python<br /><br />
+            
+            Frontend:<br />
+            •Angular<br />
+            •Svelte<br /><br />
+            
+            Databases:<br />
+            •MSSQL, PostgreSQL<br />
+            •MongoDB<br /><br />
+            
+            Cloud & infrastructure:<br />
+            •GCP<br />
+            •Azure DevOps, ArgoCD<br />
+            •KeyCloak<br />
+            •Kafka & RabbitMQ<br />
+            •Splunk, SonarQube<br />
+            •Kubernetes, kubectl, Docker, Code as infrastructureFull<br />
+        </div>
+
+        <h3>Education</h3>
+        <hr>
+        Vilnius University
+        Master's degree
+        <br />
+        Vilnius University
+        Bachelor's degree
+
+        <br /><br />
+
+        <h3>Experience</h3>
+        <hr>
+        Telia (2023 Jun - Present)
+        <br />
+        SEB Global Service (2021 Jul - 2023 May)
+        <br />
+        NRD Companies (2020 Mar - 2021 Jun)
+        <br />
     </div>
 </body>
 </html>
@@ -39,6 +86,7 @@
             dots[i].draw();
             dots[i].move();
         }
+
         requestAnimationFrame(render);
     }
 
@@ -69,4 +117,7 @@
     };
 
     render();
+
+    var content = document.getElementsByClassName("content");
+    content[0].style.top = document.body.clientHeight + content[0].scrollHeight + "px";
 </script>
