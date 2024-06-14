@@ -4,7 +4,7 @@ metadata:
   name: portfolio-ingress
   namespace: portfolio
   annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-prod
+    cert-manager.io/cluster-issuer: letsencrypt
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
   ingressClassName: nginx
@@ -22,4 +22,4 @@ spec:
   tls:
   - hosts:
     - milmantas.lt
-    secretName: letsencrypt-prod
+    secretName: letsencrypt-account-key
